@@ -19,16 +19,14 @@ a,a:link {
 
 
 
-
-
-
-
-
-
-
-
+/* main style */
 table, tr, td, th {
     border: 1px solid #191919;
+}
+td, th {
+    text-align: center;
+    padding: 10px;
+    vertical-align: middle;
 }
 table {
     width: 60%;
