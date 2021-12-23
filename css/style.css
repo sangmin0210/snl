@@ -14,21 +14,172 @@ a,a:link {
     margin: 0 auto;
 }
 
+.picture {
+    /* max-width: 100%; */
+    background:url("../images/heroImg.jpg") center;
+    height: 335px;
+}
+.menu {
+    background: rgb(29, 29, 29);
+    color: white;
+    text-align: center;
+}
+
+.menu li {
+    display: inline-block; /* block vs inline vs inline block  (inline 글자 특성을가짐)*/
+    padding: 20px 0;
+
+}
+.menu li:nth-child(2) {
+    margin: 0 100px;
+}
+.menu a {
+    font-size: 1rem;
+}
+.menu a:hover{
+    color: #01ccff;
+}
 
 
 
 
 
 /* main style */
+table {
+    width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
 table, tr, td, th {
     border: 1px solid #191919;
 }
+
 td, th {
     text-align: center;
     padding: 10px;
-    vertical-align: middle;
+    vertical-align: middle; /*inline 또는 table-cell box에서의 수직 정렬을 지정 */
 }
-table {
-    width: 60%;
-    margin: 0 auto;
+
+th {
+    background: #f7f7f7;
+}
+.bg {
+    background: #ffeded;
+}
+.point {
+    color: #ff0000;
+}
+
+caption {
+    margin: 50px 0 30px 0; 
+    font-size : 18px; /*1.125em , 112.5% */
+    border: 2px;
+}
+
+
+/* event.html */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* fee table */
+#tb_fee th {
+    width: 25%
+}
+#tb_cast th {
+    width: 25%
+}
+#tb_cast td {
+    width: 75%
+}
+
+#tb_cast {
+    margin-bottom:50px;
+}
+
+
+
+
+/* footer style */
+.extra-menu {
+    background: #fafafa;
+    text-align: center;
+    border-top: 1px solid #666;
+
+}
+
+.extra-menu li {
+    display: inline-block;
+    padding: 15px 0;
+}
+
+.extra-menu li:nth-child(2) {
+    margin: 0 20px;
+}
+
+.black-bg {
+    background: black;
+    overflow: hidden;
+}
+
+.black-bg p {
+    color: white;
+    text-align: center;
+    line-height: 1.7;
+}
+
+
+
+
+.footer-logo {
+    width: 103px;
+    height: 101px;
+    margin: 30px auto 20px; /*= margin 0 auto + padding 30px 0 20px 0; */
+}
+
+
+/* rwd(responsive web design, 반응형 웹디자인) */
+@media screen and (max-width:480px) {
+    /* .picture {
+        background-repeat: no-repeat;
+        background-size: contain;
+    } */
+    #tb_fee, #tb_cast {
+        max-width: 90%
+    }
 }
