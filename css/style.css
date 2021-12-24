@@ -6,6 +6,9 @@ a,a:link {
     text-decoration: none;
     color: inherit;
 }
+.blind { /* 구조적으로필요는 한데, 시각적으로 불피요 */
+    display: none;
+}
 
 /* header style */
 .logo {
@@ -34,7 +37,8 @@ a,a:link {
     margin: 0 100px;
 }
 .menu a {
-    font-size: 1rem;
+    font-size: 1.6rem;
+    font-weight: bold;
 }
 .menu a:hover{
     color: #01ccff;
@@ -78,7 +82,76 @@ caption {
 }
 
 
-/* event.html */
+/* main > event style */
+.schedule {
+    width : 1100px;
+    margin: 0 auto;
+}
+.schedule > h2 {
+    margin: 40px 0;
+    border-bottom: 1px solid #666;
+
+    
+}
+.schedule > h2 span {
+    border: 1px solid #666;
+    border-bottom:1px solid white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    margin: 0 0 -1px 10px;
+    box-shadow: 1px -2px 15px #000000;
+}
+
+
+
+.schedule li {
+    margin: 50px 0;
+    overflow: hidden;
+}
+/* .schedule > ul > li:nth-child(2n) {
+    margin: 100px 0;
+} */
+
+.schedule mark {
+    background: #007997;
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    color: white;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 20px; /* 사각형 모서리 깍기*/
+    margin-right: 10px;
+    letter-spacing: 10px;
+    text-indent: 10px;
+    font-size : 1.1rem;
+    
+    
+}
+.img {
+    width: 300px;
+    height: 220px;
+    float: left;
+    overflow: hidden;
+    box-shadow: 6px 6px 10px rgb(44, 44, 44);
+}
+.desc {    
+    width:650px;
+    float: right;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: */
+}
+.desc li {
+    margin: 0 0 18px 0;
+    height: 30px;
+}
+
+/* main > best style */
 
 
 
