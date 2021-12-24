@@ -9,7 +9,7 @@
     <meta property="og:url" content="http://sangmin.dothome.co.kr/snl">
     <meta property="og:description" content="SNL 시사 토크쇼 웹사이트 제작예제 ">
     <meta property="og:type" content="article">
-    <meta property="og:image" content="http://sangmin.dothome.co.kr/images/opengraph.png"> 
+    <meta property="og:image" content="http://sangmin.dothome.co.kr/images/opengraph.png">
     <title>SNL &gt;요금안내</title>
     <link rel="shortcut icon" href="/images/favicon1.png" type="image/x-icon">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet">
@@ -28,14 +28,43 @@
             </div>
             <div class="menu">
                 <ul>
-                    <li><a href="event.html">행사/이벤트</a></li>
-                    <li><a href="fee.html">요금안내</a></li>
-                    <li><a href="best.html">금주 베스트</a></li>
+                    <li><a href="#">행사/이벤트</a></li>
+                    <li><a href="#">요금안내</a></li>
+                    <li><a href="#">금주 베스트</a></li>
                 </ul>
             </div>
         </div>
-        <div id="main_picture">
-            
+        <div id="main">
+            <table id="tb_fee">
+                <caption>입장요금안내</caption>
+                <tr>
+                    <th>구분</th><th>솔로</th><th>커플</th><th>미성년자</th>
+                </tr>
+                <tr>
+                    <td>입장료</td><td>20,000원</td><td>30,000원</td><td rowspan="3" class="bg">입장불가</td>
+                </tr>
+                <tr>
+                    <td>부킹료</td><td>50,000원</td><td>10,000원</td>
+                </tr>
+                <tr>
+                    <td class="point">합계</td><td>70,000원</td><td>40,000원</td>
+                </tr>
+            </table>
+            <table id="tb_cast">
+                <caption>요일별 출연진</caption>
+                <tr>
+                    <th>월,화,수</th>
+                    <td>신동엽, 이동건</td>
+                </tr>
+                <tr>
+                    <th>목,금</th>
+                    <td>박진영,이지연</td>
+                </tr>
+                <tr>
+                    <th>토,일</th>
+                    <td>휴무</td>
+                </tr>
+            </table>
         </div>
         <div id="footer">
             <!-- naming rule(네이밍 규칙) / coding convention-->
