@@ -140,7 +140,7 @@ caption {
     box-shadow: 6px 6px 10px rgb(44, 44, 44);
 }
 .desc {    
-    width:650px;
+    width: 650px;
     float: right;
     /* display: flex;
     flex-direction: column;
@@ -151,7 +151,70 @@ caption {
     height: 30px;
 }
 
-/* main > best style */
+/* main > best photo style */
+#main > h2 {
+    text-align: center;
+    margin: 50px 0;
+    font-weight: bolder; /* 서체에 따라 두께가 달라진다 */
+    font-size: 35px;
+}
+.best {
+    width: 1000px;
+}
+
+.best, .best tr, .best th, .best td {
+    border: 0;
+    padding: 0;
+}
+.best td img {
+    max-width: 100%;
+}
+.best td {
+    padding: 20px;
+    position: relative;
+}
+/* .best td {
+    border-spacing: 10px 30px;
+} */
+/* .best tr:nth-child(2) :nth-child(1):before{
+    content: ''; 
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("../images/playbtn.png") no-repeat center;
+    position: absolute;
+    left: 0;
+    top: 0; 
+}*/
+#modal {
+    display: none;
+    background: rgba(37,37,37,0.9);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1000; /* 층층이 겹치는 순서 : 1000단계 */
+}
+#close {
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
+    border-radius: 20px;
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    transform: translate(-50%, -50%);
+    background: black;
+    color: white;
+    border: none;
+}
+.overlay, #modal iframe{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); /* 변형 : 이동(수평, 수직) 시켜 */
+}
+
+
 
 
 

@@ -7,7 +7,7 @@
     <meta property="og:title" content="SNL: saturday night life">
     <meta property="og:site_name" content="SNL: saturday night life">
     <meta property="og:url" content="http://sangmin.dothome.co.kr/snl">
-    <meta property="og:description" content="SNL 시사 토크쇼 웹사이트 제작예제 ">
+    <meta property="og:description" content="SNL 시사 토크쇼 웹사이트 제작예제">
     <meta property="og:type" content="article">
     <meta property="og:image" content="http://sangmin.dothome.co.kr/images/opengraph.png"> 
     <title>금주 베스트</title>
@@ -19,6 +19,10 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div id="modal">
+        <button id="close">닫기</button>
+        <iframe width="1111" height="625" src="https://www.youtube.com/embed/Kr-jD1FNXDY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
         <div id="header">
             <div class="logo">
                 <img src="images/img_logo1.jpg" alt="snl">
@@ -35,13 +39,24 @@
             </div>
         </div>
         <div id="main">
-            <h2 class="best">금주베스트</h2>
-            <img src="images/best1.png" alt="베스트 사진">
-            <img src="images/best2.png" alt="베스트 사진">
-            <img src="images/best3.png" alt="베스트 사진">
-            <img src="images/best4.png" alt="베스트 사진">
-            <img src="images/best5.png" alt="베스트 사진">
-            
+            <h2>금주 베스트</h2>
+            <table class="best">
+                <tr>
+                    <td><img src="https://picsum.photos/id/10/300/300" alt="image"></td>
+                    <td><img src="https://picsum.photos/id/20/300/300" alt="image"></td>
+                    <td><img src="https://picsum.photos/id/30/300/300" alt="image"></td>
+                </tr>
+                <tr>
+                    <td><!--클릭시 모달창 open!-->
+                        <div class="overlay">
+                            <img src="images/playbtn.png" alt="modal">
+                        </div>
+                        <img src="https://picsum.photos/id/40/300/300" alt="image">
+                    </td>
+                    <td><img src="https://picsum.photos/id/50/300/300" alt="image"></td>
+                    <td><img src="https://picsum.photos/id/60/300/300" alt="image"></td>
+                </tr>
+            </table>
         </div>
         <div id="footer">
             <!-- naming rule(네이밍 규칙) / coding convention-->
@@ -62,5 +77,21 @@
                 <p>Copyright(c) SNL. All Rights Reserved</p>
             </div>
         </div>
+        <script>
+            var open = document.querySelector(".overlay");
+            var modal = document.querySelector("#modal");
+            var body = document.querySelector("body");
+            var close = document.querySelector("#close");
+            open.addEventListener("click", function(){
+                // 숨겨두었던 #modal을 노출합니다.(여러분이 숨겨요?!)
+                modal.style.display = "block";       
+                body.style.overflow = "hidden";
+                
+            })
+            close.addEventListener("click", function(){
+                modal.style.display = "none"
+                body.style.overlfow = "auto"
+            })
+        </script>
 </body>
 </html>
