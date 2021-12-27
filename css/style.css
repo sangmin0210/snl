@@ -214,6 +214,22 @@ caption {
     transform: translate(-50%, -50%); /* 변형 : 이동(수평, 수직) 시켜 */
 }
 
+/* main > .contents style */
+.contents {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.board-icons {
+    display:flex;
+}
+.board {
+    width: 25%;
+}
+.icons {
+    width: 75%;
+    background: #f5f5f5;
+}
+
 
 
 
