@@ -220,14 +220,50 @@ caption {
     margin: 0 auto;
 }
 .board-icons {
-    display:flex;
+    display: flex; /* p.536 */
+    margin: 40px 0;
+
 }
 .board {
     width: 25%;
 }
+.board > h2 {
+    text-transform: uppercase; /*대문자로 바꿔줌*/
+    font-size: 40px; 
+    font-weight: bolder;
+    margin: 60px 0;
+}
+.board > p {
+    font-size: 20px;
+    color: #7c7c7c;
+    margin: 30px 0;
+}
+.board > button {
+    border: 0;
+    color: white;
+    padding: 3px 5px;
+    border-radius: 3px;
+}
+.icons figcaption{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+
+
+
+
 .icons {
     width: 75%;
     background: #f5f5f5;
+}
+.icons ul {
+    display: flex;
+    height: 360px;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 
